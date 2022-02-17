@@ -1,0 +1,155 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include "memory.h"
+
+/* memory_new
+ * create a new memory struct, initialze its address and size
+ */
+memory* memory_new(void *addr, unsigned int size){
+  memory* m = (memory*)malloc(sizeof(memory));
+  m->addr = addr;
+  m->size = size;
+  return m;
+}
+
+/* free the dynamically allocated memory struct
+ */
+void memory_free(void* p){
+  memory* m = (memory*)p;
+  free(m);
+}
+
+/* compare two memory variables x and y by address 
+ * if x is less than y, return -1
+ * if x is greater than y, return 1
+ * if they are equal, return 0
+ */
+int memory_addr_cmp(const void* x, const void* y)
+{
+  memory *x_mem = (memory *)x;
+  memory *y_mem = (memory *)y;
+  if(x_mem->addr > y_mem->addr)
+  {
+    return 1;
+  }
+  if(x_mem->addr == y_mem->addr)
+  {
+    return 0;
+  }
+  else //x->addr < y->addr
+  {
+    return -1;
+  }
+}
+
+/* compare two memory variables x and y by size 
+ * if x is less than y, return -1
+ * if x is greater than y, return 1
+ * if they are equal, return 0
+ */
+int memory_size_cmp(const void* x, const void* y){
+  memory *x_mem = (memory *)x;
+  memory *y_mem = (memory *)y;
+  if(x_mem->size > y_mem->size)
+  {
+    return 1;
+  }
+  if(x_mem->size == y_mem->size)
+  {
+    return 0;
+  }
+  else //x->size < y->size
+  {
+    return -1;
+  }
+}
+
+/* print the memory address and size
+ */
+void memory_print(void* data){
+  if (data == NULL) return;
+  memory* m = (memory*)data;
+  printf("address: %d, size: %u\n", m, m->size);
+}
+
+/* allocate_memory_page
+ *
+ * Call malloc to request a page of data - 4096 bytes. Create
+ * a memory struct and initialize it to store the resulting
+ * large chunk of data that was allocated. Return a pointer
+ * to the memory struct.
+ */
+memory *allocate_memory_page()
+{
+  void *new_mem = malloc(4096);
+  new_mem = 4088;
+  memory *ret_val = memory_new(new_mem,4088);
+  return ret_val;
+}
+
+//Helper function advances pointer thanks to pointer arithmetic. 
+void* advance_by_x(void *v,unsigned int size_desired)
+{
+  char *pc = (char*)v;
+  pc += size_desired;
+  return (void*)pc;
+}
+
+/* split_memory
+ *
+ * Given a memory struct and a desired size of memory,
+ * perform the operations necessary to remove the desired
+ * size of memory from the end of the chunk and record
+ * the new information for the smaller chunk. Return a 
+ * pointer to the beginning of the chunk you are handing out.
+ */
+void* split_memory(memory* data, unsigned int size_desired)
+{
+  unsigned int *size = data;
+  *size = (data->size - size_desired - 8);
+  void* ret_val = advance_by_x(data, (data->size - size_desired));
+  char *ret_val_size = (char*)ret_val - 8;
+  (int*) ret_val_size;
+  *ret_val_size = size_desired;
+  return ret_val;
+}
+
+/* merge_memory
+ *
+ * Given two memory structs, check to see if the two can be 
+ * merged. They can be merged if the two are next to each other 
+ * in memory with no break in between. If they can be merged,
+ * return a memory struct pointer to a struct containing the information
+ * for a single memory chunk containing the old two chunks.
+ * If they cannot be merged (there is space between them), then
+ * return NULL; 
+ *
+ * Make sure that you free any memory structs that you need to.
+ */
+memory *merge_memory(memory *first, memory *second)
+{
+  memory* after;
+  memory* before;
+  if(first->addr > second->addr)
+  {
+    after = first;
+    before = second;
+  }
+  if(first->addr < second->addr)
+  {
+    after = second;
+    before = first;
+  }
+  if(first->addr == second->addr)
+    printf("Nothing to be done. They have same address.\n");
+  if((before->addr + before->size) == after->addr)
+  {
+    before->addr = realloc(before->addr,sizeof(before->size + after->size));
+    before->size = before->size + after->size;
+    return before;
+  }
+     else
+     {
+       return NULL;
+     }
+} 

@@ -1,0 +1,128 @@
+Printed all products first to test (create_product):
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+Flour (92656) Grocery:current: 9, min: 8, max: 12 
+
+ 
+ Printing insert_head function linked list. Should be all products in reverse order.:
+Product Status:
+Flour (92656) Grocery:current: 9, min: 8, max: 12 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+
+ Testing find function. Looking for 92656.Should return Grocery, Flour, 92656, 9, 8, 12. 
+Flour (92656) Grocery:current: 9, min: 8, max: 12 
+
+ Testing find function. Looking for 12345.Should return error message to terminal. 
+
+ Testing record_restock function. Restocking (92656) from 9 to 12.
+Product Status:
+Flour (92656) Grocery:current: 12, min: 8, max: 12 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+
+ Testing record_restock function. Restocking (12345) should return a terminal error.
+Product Status:
+Flour (92656) Grocery:current: 12, min: 8, max: 12 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+
+ Testing product_sold function. Selling one (92656). Dec from 12 to 11.
+Product Status:
+Flour (92656) Grocery:current: 11, min: 8, max: 12 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+
+ Testing product_sold function. Selling one (23765). Should stay at 0.
+Product Status:
+Flour (92656) Grocery:current: 11, min: 8, max: 12 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+
+ Testing record_restock function. Restocking (12345) should return a terminal error.
+Product Status:
+Flour (92656) Grocery:current: 11, min: 8, max: 12 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 29, min: 10, max: 30 
+
+ 
+ Printing sorted_by_id function linked list. Should be all products in order of inc. pID:
+Product Status:
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+2%Milk (38590) Grocery:current: 29, min: 10, max: 30 
+Flour (92656) Grocery:current: 11, min: 8, max: 12 
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+
+ 
+ Printing items that need restocking.
+.Product Status:
+LionStuffy (380571) Hobby:current: 7, min: 4, max: 8 
+Flour (92656) Grocery:current: 11, min: 8, max: 12 
+2%Milk (38590) Grocery:current: 29, min: 10, max: 30 
+Printer (23765) Office:current: 0, min: 4, max: 8 
+BandAids (8261) Pharmacy:current: 14, min: 12, max: 25 
+Stapler (3826) Office:current: 23, min: 22, max: 30 
+BugSpray (2653) Grocery:current: 8, min: 6, max: 16 
+
+ 
+ Printing items which should now be restocked.all items should be at their max # of items.
+Product Status:
+BugSpray (2653) Grocery:current: 16, min: 6, max: 16 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+Stapler (3826) Office:current: 30, min: 22, max: 30 
+BandAids (8261) Pharmacy:current: 25, min: 12, max: 25 
+Printer (23765) Office:current: 8, min: 4, max: 8 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+Flour (92656) Grocery:current: 12, min: 8, max: 12 
+LionStuffy (380571) Hobby:current: 8, min: 4, max: 8 
+
+ 
+ Printing sorted_by_id_and_cat function linked list. Should be all products in order of category and inc. pID:
+Had issues with last item in list.Product Status:
+BugSpray (2653) Grocery:current: 16, min: 6, max: 16 
+Butter (2956) Grocery:current: 35, min: 10, max: 35 
+2%Milk (38590) Grocery:current: 30, min: 10, max: 30 
+Stapler (3826) Office:current: 30, min: 22, max: 30 
+Printer (23765) Office:current: 8, min: 4, max: 8 
+BandAids (8261) Pharmacy:current: 25, min: 12, max: 25 
+Flour (92656) Grocery:current: 12, min: 8, max: 12 
+LionStuffy (380571) Hobby:current: 8, min: 4, max: 8 

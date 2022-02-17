@@ -1,0 +1,251 @@
+;; _total-score_                  93 / 100
+
+;; Week 2 Assignment
+
+;; === automated correctness ===
+
+;; == warmup ==
+
+;; print_asterisk_letter		4.0 / 5
+'N' =>  SUCCESS
++ 1.0 / 1.0
+
+'O' =>  SUCCESS
++ 1.0 / 1.0
+
+'P' =>  FAIL:
+Student output:
+**** 
+*   *
+**** 
+*
+*
+
+Correct output:
+**** 
+*   *
+**** 
+*    
+*    
+
++ 0.0 / 1.0
+
+'R' =>  SUCCESS
++ 1.0 / 1.0
+
+'Q' =>  SUCCESS: Expected and recieved error 
++ 1.0 / 1.0
+
+;; draw_sideways_wedge_rec		7.0 / 7
+(3, 10) =>  SUCCESS
++ 4.0 / 4.0
+
+(4, 11) =>  SUCCESS
++ 2.0 / 2.0
+
+(5, 0) =>  SUCCESS
++ 1.0 / 1.0
+
+;; draw_sideways_wedge_iter		7.0 / 7
+(3, 10) =>  SUCCESS
++ 4.0 / 4.0
+
+(4, 11) =>  SUCCESS
++ 2.0 / 2.0
+
+(5, 0) =>  SUCCESS
++ 1.0 / 1.0
+
+;; draw_halves_up			7.0 / 7
+(32) =>  SUCCESS
++ 3.0 / 3.0
+
+(15) =>  SUCCESS
++ 3.0 / 3.0
+
+(0) =>  SUCCESS
++ 1.0 / 1.0
+
+;; draw_halves_down			6.0 / 7
+(32) =>  SUCCESS
++ 3.0 / 3.0
+
+(15) =>  SUCCESS
++ 3.0 / 3.0
+
+(0) =>  FAIL:
+Student output:
+*
+
+Correct output:
+(empty)
++ 0.0 / 1.0
+
+;; == hw ==
+;; num_of_color				2.0 / 2
+(1634, 4) =>  SUCCESS
++ 1.0 / 1.0
+
+(1131, 1) =>  SUCCESS
++ 1.0 / 1.0
+
+;; count_exact_matches			2.0 / 2
+(2445, 2451) =>  SUCCESS
++ 1.0 / 1.0
+
+(2435, 6416) =>  SUCCESS
++ 1.0 / 1.0
+
+;; count_color_matches			1.0 / 2
+(2415, 1425) =>  SUCCESS
++ 1.0 / 1.0
+
+(2445, 2451) =>  FAIL:
+Student output:
+4
+Correct output:
+3
+
++ 0.0 / 1.0
+
+;; play_mastermind			8 / 10
+game in which guess is correct on first try => SUCCESS
++ 4 / 4
+
+game in which guess is correct on second try => SUCCESS
+
++ 4 / 4
+
+game in which guess is incorrect 12 second times => FAIL: Did not stop after 12 guesses
+
++ 0/ 2
+
+;; play_5_questions			15.0 / 15
+Answers: 01000, Expected Result: squirrel => SUCCESS
++ 1.5 / 1.5
+Answers: 11000, Expected Result: camel => SUCCESS
++ 1.5 / 1.5
+Answers: 01001, Expected Result: jellyfish => SUCCESS
++ 1.5 / 1.5
+Answers: 01100, Expected Result: pet gerbil => SUCCESS
++ 1.5 / 1.5
+Answers: 11001, Expected Result: duck-billed platypus => SUCCESS
++ 1.5 / 1.5
+Answers: 00110, Expected Result: pat of butter => SUCCESS
++ 1.5 / 1.5
+Answers: 10110, Expected Result: oven => SUCCESS
++ 1.5 / 1.5
+Answers: 00100, Expected Result: pincushion => SUCCESS
++ 1.5 / 1.5
+Answers: 10000, Expected Result: see-saw => SUCCESS
++ 1.5 / 1.5
+Answers: 00000, Expected Result: tetherball => SUCCESS
++ 1.5 / 1.5
+
+;; print_backwards_base_8		7.0 / 7
+
+67 =>  SUCCESS
++ 3.0 / 3.0
+
+24 =>  SUCCESS
++ 2.0 / 2.0
+
+4 =>  SUCCESS
++ 2.0 / 2.0
+
+;; automated_correctness_subtotal_:	     66.0 / 71
+
+;; === 
+;; partial credit returned via visual inspection - only for
+;; problems on which you earned fewer points than you can get back.
+;; if you got more than 0 points, then the partial credit is scaled.
+;; look at code for grader notes if bugs identified
+
+;; draw_sideways_wedge_rec	-   / 3
+make sure no points are taken off for something that you can't see visually - 
+like perhaps an extra space at the end of the line. That should restore
+all points back.
++6 - only problem is systemic minor printing difficulty like extra line somewhere
++2 - draws something wedge-ish in a recursive manner
+				
+;; draw_sideways_wedge_iter	-   / 3
+make sure no points are taken off for something that you can't see visually - 
+like perhaps an extra space at the end of the line. That should restore
+all points back.
++6 - only problem is systemic minor printing difficulty like extra line somewhere
++2 - draws something wedge-ish in a recursive manner
+				
+;; draw_halves_down	-   / 3
+make sure no points are taken off for something that you can't see visually - 
+like perhaps an extra space at the end of the line. That should restore
+all points back.
++6 - only problem is systemic minor printing difficulty like extra line somewhere
+				
+;; draw_halves_up	-   / 3
+make sure no points are taken off for something that you can't see visually - 
+like perhaps an extra space at the end of the line. That should restore
+all points back.
++6 - only problem is systemic minor printing difficulty like extra line somewhere
+				
+;; play_mastermind
+;; if there are some visual mismatches, grade this way instead
+-0 - visual mismatch that is only extra line or spacing, nothing
+   - against the requirements
+-1 - minor mismatch that involves using a different printf than provided
+-2 - doesn't stop after 12 guesses
+-2 - doesn't print out the guess number properly
+-2 - doesn't choose between Congratulations and not quite properly
+-2 - doesn't print out feedback properly
+-5 - doesn't ask for multiple guesses
+
+------------------------------------------------------
+game in which guess is incorrect 12 second times => SUCCESS (VISUAL INSPECTION)
+
++ 2/ 2
+
+-2 - doesn't print out the guess number properly
+
+GRADER COMMENT: After guessing invalid number, guess number counter still
+incremented
+------------------------------------------------------
+
+;; play_5_questions
+-0 - visual mismatch that is only extra line or spacing, nothing
+   - against the requirements
+-1 - minor mismatch that involves using a different printf than provided
+-1.5 for any incorrect answer
+
+
+;; if necessary, 10 pt charge for grader manually
+;; getting code to run (as long as it was student error)
+
+;; only for items incorrect in automated grading
+;; manual_correctness_subtotal_:	     / 16
+
+;; combined_correctness_subtotal_:	    66 / 71
+
+;; === style ===
+
+;; well-written purposes             3 / 5
+
+GRADER COMMENT: Some of your functions are missing purposes
+
+;; proper indentation, line breaks   5 / 5
+;; well-named variables		     5 / 5
+(i, j, k okay for simple loop counters. Meaningful names for others.)
+;; adequate tests                    9 / 9
+(for each function, tests that exercise pertinent functionality and error conditions)
+
+;; === efficiency ===
+;; good decisions for control structures 5 / 5
+ -2 - inappropriate control structure (if/else where switch should have been)
+ -2 - repeated function calls with same input and same result
+
+;; === problem-specific requirements === 
+;; Remove points from correctness testing if they don't use recursion when specified.
+;; This refers to the recursive problems
+
+;; style _subtotal_:		  27  / 29
+
+;; graded by 
+

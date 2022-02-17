@@ -1,0 +1,82 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "othello_funcs.h"
+
+int main()
+{
+
+	play_othello();
+	
+	//char board[8][8];
+	//init_board(board);
+	//print_othello_board(board);
+	//printf("\n");
+	/*
+	//testing going straight up.
+	place_piece(board,'B',2,4);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',1,4);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',0,4);
+	print_othello_board(board);
+	
+	testing going down
+	place_piece(board,'B',5,4);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',6,4);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',7,4);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',0,0);
+	print_othello_board(board);	
+
+	testing going right.
+	place_piece(board,'B',4,5);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',4,6);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',4,7);
+	print_othello_board(board);
+	place_piece(board,'B',0,0);
+	print_othello_board(board);
+	
+	testing going left.
+	place_piece(board,'B',4,2);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',4,1);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',4,0);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',0,0);
+	print_othello_board(board);
+
+	*/
+
+	/*place_piece(board,'B',2,5);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',1,6);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',0,7);
+	print_othello_board(board);
+	printf("\n");
+	place_piece(board,'B',0,0);
+	print_othello_board(board);		
+*/
+	//play_othello();
+
+
+	return 0;
+}

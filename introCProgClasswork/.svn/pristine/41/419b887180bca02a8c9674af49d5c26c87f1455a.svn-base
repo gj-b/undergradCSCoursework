@@ -1,0 +1,78 @@
+1. Comment out #include <stdio.h> from errorwarmup1.c (place "//" before it)
+1)errorwarmup.c:15:2: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)'
+      [-Wimplicit-function-declaration]
+        printf("Integer: %d\n",ival);
+        ^
+errorwarmup.c:15:2: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 warning generated.
+
+2. Declare the same variable name twice
+2)errorwarmup.c:87:13: error: redefinition of 'input'
+        int input, input,  output; // declared, but not initialized
+                   ^
+errorwarmup.c:87:6: note: previous definition is here
+        int input, input,  output; // declared, but not initialized
+            ^
+1 error generated.
+
+3. Remove a variable declaration
+3)	errorwarmup.c:93:2: error: use of undeclared identifier 'input'
+        input = 10;
+        ^
+	errorwarmup.c:94:26: error: use of undeclared identifier 'input'
+        output = return_a_value(input);
+                                ^
+	errorwarmup.c:95:38: error: use of undeclared identifier 'input'
+        printf("return_a_value(%d) is %d\n",input,output);
+                                            ^
+	errorwarmup.c:96:2: error: use of undeclared identifier 'input'
+        input = 20;
+        ^
+	errorwarmup.c:97:26: error: use of undeclared identifier 'input'
+        output = return_a_value(input);
+                                ^
+	errorwarmup.c:98:38: error: use of undeclared identifier 'input'
+        printf("return_a_value(%d) is %d\n",input,output);
+                                            ^
+	errorwarmup.c:99:2: error: use of undeclared identifier 'input'
+        input = 0;
+        ^
+	errorwarmup.c:100:26: error: use of undeclared identifier 'input'
+        output = return_a_value(input);
+                                ^
+	errorwarmup.c:101:38: error: use of undeclared identifier 'input'
+        printf("return_a_value(%d) is %d\n",input,output);
+                                            ^
+	errorwarmup.c:111:2: error: use of undeclared identifier 'input'
+        input = 212;
+        ^
+	errorwarmup.c:112:18: error: use of undeclared identifier 'input'
+        output = f_to_c(input);
+                        ^
+	11 errors generated.
+
+
+4. Misspell a variable name or function name
+4) errorwarmup.c:93:2: error: use of undeclared identifier 'imput'; did you mean 'input'?
+        imput = 10;
+        ^~~~~
+        input
+errorwarmup.c:87:6: note: 'input' declared here
+        int input, output; // declared, but not initialized
+            ^
+1 error generated.
+
+5. Remove a closed curly brace
+5) errorwarmup.c:116:1: error: expected '}'
+^
+errorwarmup.c:86:1: note: to match this '{'
+{
+^
+1 error generated.
+
+6. Remove a semi-colon from the end of one of the lines
+6) errorwarmup.c:114:38: error: expected ';' after expression
+        printf("Example program exiting.\n")
+                                            ^
+                                            ;
+	1 error generated.
