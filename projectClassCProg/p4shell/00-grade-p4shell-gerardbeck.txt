@@ -1,0 +1,350 @@
+p4shell grade: 95/100 
+
+We graded your revision number: 228 
+
+$ make
+gcc -Wall -o myshell myshell.c
+myshell.c: In function ‘sizeofCMD’:
+myshell.c:42:5: warning: value computed is not used [-Wunused-value]
+     *ptr_mov++;
+     ^
+myshell.c: In function ‘change_dir’:
+myshell.c:87:9: warning: unused variable ‘post’ [-Wunused-variable]
+   char* post;
+         ^
+myshell.c:86:8: warning: unused variable ‘postwd’ [-Wunused-variable]
+   char postwd[514];
+        ^
+myshell.c:85:9: warning: unused variable ‘curr’ [-Wunused-variable]
+   char* curr = getcwd(cwd,sizeof(cwd));
+         ^
+myshell.c: In function ‘redir_symb_present’:
+myshell.c:140:9: warning: unused variable ‘j’ [-Wunused-variable]
+   int i,j;
+         ^
+myshell.c:138:9: warning: unused variable ‘ptr_mov’ [-Wunused-variable]
+   char* ptr_mov;
+         ^
+myshell.c: In function ‘cd_symb_present’:
+myshell.c:181:5: warning: value computed is not used [-Wunused-value]
+     *ptr_mov++;
+     ^
+myshell.c: In function ‘break_up_redir’:
+myshell.c:291:7: warning: unused variable ‘size_arg’ [-Wunused-variable]
+   int size_arg;
+       ^
+myshell.c:288:9: warning: unused variable ‘brkup_redir’ [-Wunused-variable]
+   char* brkup_redir[size+2];
+         ^
+myshell.c: In function ‘adv_redir_symb_present’:
+myshell.c:315:17: warning: passing argument 1 of ‘strstr’ makes pointer from integer without a cast [-Wint-conversion]
+       if(strstr(input[i],">+" != NULL))
+                 ^
+In file included from myshell.c:3:0:
+/usr/include/string.h:337:14: note: expected ‘const char *’ but argument is of type ‘char’
+ extern char *strstr (const char *__haystack, const char *__needle)
+              ^
+myshell.c:315:26: warning: passing argument 2 of ‘strstr’ makes pointer from integer without a cast [-Wint-conversion]
+       if(strstr(input[i],">+" != NULL))
+                          ^
+In file included from myshell.c:3:0:
+/usr/include/string.h:337:14: note: expected ‘const char *’ but argument is of type ‘int’
+ extern char *strstr (const char *__haystack, const char *__needle)
+              ^
+myshell.c:311:9: warning: unused variable ‘j’ [-Wunused-variable]
+   int i,j;
+         ^
+myshell.c:309:9: warning: unused variable ‘ptr_mov’ [-Wunused-variable]
+   char* ptr_mov;
+         ^
+myshell.c: In function ‘adv_larger_redir_symb_present’:
+myshell.c:324:7: warning: unused variable ‘val’ [-Wunused-variable]
+   int val = 0;
+       ^
+myshell.c: In function ‘break_up_adv_redir’:
+myshell.c:340:7: warning: unused variable ‘size_arg’ [-Wunused-variable]
+   int size_arg;
+       ^
+myshell.c:337:9: warning: unused variable ‘brkup_redir’ [-Wunused-variable]
+   char* brkup_redir[size+2];
+         ^
+myshell.c: In function ‘run_adv_redir’:
+myshell.c:417:5: warning: statement with no effect [-Wunused-value]
+     name[i];
+     ^
+myshell.c:397:7: warning: unused variable ‘errnum’ [-Wunused-variable]
+   int errnum;
+       ^
+myshell.c: In function ‘execute’:
+myshell.c:468:7: warning: unused variable ‘last_char_pos’ [-Wunused-variable]
+   int last_char_pos = 0;
+       ^
+myshell.c:467:7: warning: unused variable ‘length’ [-Wunused-variable]
+   int length = strlen(temp);
+       ^
+myshell.c:464:7: warning: unused variable ‘redir_place’ [-Wunused-variable]
+   int redir_place = redir(sorted);
+       ^
+myshell.c: In function ‘sep_cmd’:
+myshell.c:641:7: warning: unused variable ‘size_arg’ [-Wunused-variable]
+   int size_arg;
+       ^
+myshell.c: In function ‘main’:
+myshell.c:679:9: warning: unused variable ‘adv_redir_place’ [-Wunused-variable]
+     int adv_redir_place;
+         ^
+myshell.c:678:9: warning: unused variable ‘redir_place’ [-Wunused-variable]
+     int redir_place;
+         ^
+myshell.c:677:9: warning: unused variable ‘status’ [-Wunused-variable]
+     int status;
+         ^
+myshell.c:675:12: warning: unused variable ‘i’ [-Wunused-variable]
+     int t, i = 0;
+            ^
+myshell.c:675:9: warning: unused variable ‘t’ [-Wunused-variable]
+     int t, i = 0;
+         ^
+myshell.c:674:18: warning: unused variable ‘parent’ [-Wunused-variable]
+     pid_t child, parent;
+                  ^
+myshell.c:674:11: warning: unused variable ‘child’ [-Wunused-variable]
+     pid_t child, parent;
+           ^
+myshell.c:673:11: warning: unused variable ‘used’ [-Wunused-variable]
+     char *used;
+           ^
+myshell.c:672:11: warning: unused variable ‘pinput’ [-Wunused-variable]
+     char *pinput;
+           ^
+
+$ /home/riza/Documents/classes/cs154/cs154-spr-19-admin/grading/p4shell/p4shell/test-scripts/grade.py
+You are in the right directory
+deleting checkProcess.py ...
+Don't delete clean.sh
+Don't delete grade.py
+Don't delete runOneTest.sh
+----------------------------------
+Running batch file: gooduser_basic
+Diffing gooduser_basic.stdout
+
+
+Diffing gooduser_basic.stderr
+
+
+gooduser_basic       7  7
+----------------------------------
+Running batch file: gooduser_args
+Diffing gooduser_args.stdout
+
+
+Diffing gooduser_args.stderr
+
+
+gooduser_args        7  7
+----------------------------------
+Running batch file: gooduser_redirection
+Diffing gooduser_redirection.stdout
+
+
+Diffing gooduser_redirection.stderr
+
+
+Diffing gooduser_redirection_rd_1
+
+
+Diffing gooduser_redirection_rd_2
+
+
+gooduser_redirection 7  7
+----------------------------------
+Running batch file: gooduser_multipleCommand
+Diffing gooduser_multipleCommand.stdout
+
+
+Diffing gooduser_multipleCommand.stderr
+
+
+gooduser_multipleCommand 7  7
+----------------------------------
+Running batch file: buildin_wrongFormat
+Diffing buildin_wrongFormat.stdout
+
+
+Diffing buildin_wrongFormat.stderr
+
+
+buildin_wrongFormat  7  7
+----------------------------------
+Running batch file: cd_toFolderNotExist
+Diffing cd_toFolderNotExist.stdout
+
+
+Diffing cd_toFolderNotExist.stderr
+
+
+cd_toFolderNotExist  3  3
+----------------------------------
+Running batch file: badCommand
+Diffing badCommand.stdout
+
+
+Diffing badCommand.stderr
+
+
+badCommand           4  4
+----------------------------------
+Running batch file: complexCommand
+Diffing complexCommand.stdout
+
+
+Diffing complexCommand.stderr
+
+
+complexCommand       6  6
+----------------------------------
+Running batch file: multipleCommand
+Diffing multipleCommand.stdout
+
+
+Diffing multipleCommand.stderr
+
+
+multipleCommand      8  8
+----------------------------------
+Running batch file: complexRedirection_format
+Diffing complexRedirection_format.stdout
+
+
+Diffing complexRedirection_format.stderr
+
+
+Diffing complexRedirection_format_rd_1
+
+
+Diffing complexRedirection_format_rd_2
+
+
+Diffing complexRedirection_format_rd_3
+
+
+Diffing complexRedirection_format_rd_4
+
+
+Diffing complexRedirection_format_rd_5
+
+
+Diffing complexRedirection_format_rd_6
+
+
+Diffing complexRedirection_format_rd_7
+
+
+Diffing complexRedirection_format_rd_8
+
+
+complexRedirection_format 6  6
+----------------------------------
+Running batch file: advancedRedirection_format
+Diffing advancedRedirection_format.stdout
+
+
+Diffing advancedRedirection_format.stderr
+
+
+Diffing advancedRedirection_format_rd_1
+
+
+Diffing advancedRedirection_format_rd_2
+
+
+Diffing advancedRedirection_format_rd_3
+
+
+Diffing advancedRedirection_format_rd_4
+
+
+Diffing advancedRedirection_format_rd_5
+
+
+Diffing advancedRedirection_format_rd_6
+
+
+Diffing advancedRedirection_format_rd_7
+
+
+Diffing advancedRedirection_format_rd_8
+
+
+advancedRedirection_format 6  6
+----------------------------------
+Running batch file: complexRedirection_illegal
+Diffing complexRedirection_illegal.stdout
+
+
+Diffing complexRedirection_illegal.stderr
+
+
+Diffing complexRedirection_illegal_rd_1
+
+
+complexRedirection_illegal 6  6
+----------------------------------
+Running batch file: advancedRedirection_illegal
+Diffing advancedRedirection_illegal.stdout
+
+
+Diffing advancedRedirection_illegal.stderr
+
+
+Diffing advancedRedirection_illegal_rd_1
+
+
+advancedRedirection_illegal 6  6
+----------------------------------
+Running batch file: advancedRedirection_concat
+Diffing advancedRedirection_concat.stdout
+
+
+Diffing advancedRedirection_concat.stderr
+
+
+Diffing advancedRedirection_concat_rd_1
+
+
+advancedRedirection_concat 6  6
+----------------------------------
+Running batch file: emptyInput
+Diffing emptyInput.stdout
+
+
+Diffing emptyInput.stderr
+
+
+emptyInput           1  1
+----------------------------------
+Running batch file: 1KCommand
+Diffing 1KCommand.stdout
+
+
+Diffing 1KCommand.stderr
+
+
+1KCommand            3  3
+two arguments        2  2
+does not exist       2  2
+File name            1  1
+Makefile and README  5  5
+total                100  100
+
+
+Compile error penalty  -5
+
+Final Grade: 95
+
+
+Your code at revision 228 was not compileable with the original Makefile. This
+is because you have modify your Makefile by tuning off -Werror flag. The code
+has many unused variables, which only becomes compileable if we turned off
+-Werror flag.
+

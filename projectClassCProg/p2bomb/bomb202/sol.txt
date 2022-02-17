@@ -1,0 +1,1 @@
+A single event can have infinitely many interpretations

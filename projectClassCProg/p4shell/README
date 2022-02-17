@@ -1,0 +1,9 @@
+All good. 
+
+The program myshell.c has the following functionalities:
+	Parse a file for shell commands. 
+	Allows for built in commands: exit, cd, and pwd. 
+	Allows for redirection - meaning storing output in given file. 
+	Allows for advanced redirection - meaning storing output at beginning of given file. 
+	Optional White Spaces in the commands. 
+	Basic error handling, returning same error code for every error. 

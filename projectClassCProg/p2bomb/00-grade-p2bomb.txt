@@ -1,0 +1,63 @@
+p2bomb grade: 59/60
+bomb237 Wed Apr 24 01:31 b'valid'
+    Defused:   6
+    Explosion: 2
+    Score:     59
+bomb202 Tue Apr 23 21:42 b'valid'
+    Defused:   6
+    Explosion: 36
+    Score:     42
+
+###### bomb237 created: Thu Apr 25 23:09:02 2019 ######
+Sat Apr 20 16:30:56 2019: phase 1 defused: 'This art/sport provides interpretive equestrians a chance cs154'
+Sat Apr 20 16:41:28 2019: phase 2 defused: '6 18 54 161 482 1445'
+Sat Apr 20 17:45:21 2019: phase 3 exploded: '0 2'
+Sat Apr 20 17:49:00 2019: phase 3 defused: '0 5215'
+Tue Apr 23 22:23:47 2019: phase 4 defused: '11 18'
+Tue Apr 23 23:59:17 2019: phase 5 exploded: '6 12'
+Wed Apr 24 01:02:32 2019: phase 5 defused: 'bmfjed'
+Wed Apr 24 01:31:11 2019: phase 6 defused: '2 1 4 3 5 6'
+
+###### bomb202 created: Thu Apr 25 23:09:02 2019 ######
+Thu Apr 18 18:25:32 2019: phase 1 exploded: 'step'
+Thu Apr 18 18:57:38 2019: phase 1 exploded: '4204752'
+Thu Apr 18 19:02:35 2019: phase 1 exploded: 'step'
+Thu Apr 18 19:15:39 2019: phase 1 exploded: 'test '
+Thu Apr 18 19:18:57 2019: phase 1 exploded: 'Value can't be converted to integer.'
+Thu Apr 18 19:23:03 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 19:23:21 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 19:24:24 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 19:32:53 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 19:39:38 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 19:45:39 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 19:47:52 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 20:34:13 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 20:35:19 2019: phase 1 exploded: '***truncated***'
+Thu Apr 18 20:35:32 2019: phase 1 exploded: 'These aren't the droids you're looking for'
+Thu Apr 18 23:13:37 2019: phase 1 exploded: 'A single event can have infinitely many interpretations'
+Thu Apr 18 23:13:54 2019: phase 1 defused: 'A single event can have infinitely many interpretations cs154'
+Fri Apr 19 00:02:33 2019: phase 1 exploded: 'step'
+Fri Apr 19 00:02:57 2019: phase 1 exploded: 'test'
+Fri Apr 19 00:08:14 2019: phase 1 exploded: 'step'
+Fri Apr 19 00:10:34 2019: phase 1 exploded: 'test'
+Fri Apr 19 00:31:09 2019: phase 1 exploded: 'r'
+Fri Apr 19 13:37:19 2019: phase 1 exploded: 'kill'
+Fri Apr 19 14:03:53 2019: phase 2 exploded: '1 2 4 8 16 32'
+Fri Apr 19 14:15:49 2019: phase 1 exploded: 'A single event can have infinitely many interpreations cs154'
+Fri Apr 19 14:22:16 2019: phase 2 exploded: '1 2 3 4 5 6'
+Fri Apr 19 14:35:34 2019: phase 2 exploded: '1 6 24 42 24 24'
+Fri Apr 19 14:37:27 2019: phase 2 exploded: '1 6 12 18 24 30'
+Fri Apr 19 14:43:38 2019: phase 2 exploded: '1 6 12 18 24 30'
+Fri Apr 19 14:44:39 2019: phase 2 exploded: '1 6 12 18 24 30'
+Fri Apr 19 15:04:12 2019: phase 2 exploded: '6 12 23 45 88'
+Fri Apr 19 15:06:42 2019: phase 2 defused: '6 12 23 45 88 174'
+Fri Apr 19 15:44:28 2019: phase 3 defused: '0 1638'
+Fri Apr 19 22:10:43 2019: phase 4 exploded: 'kill'
+Sat Apr 20 01:24:55 2019: phase 4 exploded: '1 24'
+Sat Apr 20 01:25:07 2019: phase 4 exploded: 'kill'
+Sat Apr 20 01:58:14 2019: phase 4 defused: '352 4'
+Sat Apr 20 02:43:55 2019: phase 5 defused: '1 4'
+Sat Apr 20 02:44:54 2019: phase 6 exploded: 'quit'
+Sat Apr 20 03:58:09 2019: phase 6 exploded: '4 2 6 3 1 5'
+Sat Apr 20 15:32:30 2019: phase 6 defused: '2 1 5 6 3 4'
+Tue Apr 23 21:42:02 2019: phase 4 exploded: 'kill'
